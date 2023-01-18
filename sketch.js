@@ -62,13 +62,13 @@ function initDate() {
 		if (second() >= 59 && statuss) {
 			statuss = false
 			if (minute() + 1 > 59) {
-				console.log('当前分钟', '01')
+				console.log('current minutes is ', '01')
 			} else {
 				let minutes = minute() + 1
 				if (minutes < 10) {
-					console.log('当前分钟', '0' + minutes)
+					console.log('current minutes is ', '0' + minutes)
 				} else {
-					console.log('当前分钟', minutes)
+					console.log('current minutes is ', minutes)
 				}
 
 			}
