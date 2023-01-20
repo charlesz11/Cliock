@@ -27,7 +27,7 @@ function initBox() {
 }
 
 
-// 绘制水漏时钟
+// draw water filter
 function initDate() {
 	let H = hour()
 	let M = minute()
@@ -35,7 +35,7 @@ function initDate() {
 
 
 
-	// 时
+	// clock
 	noStroke()
 	fill(255, 255, 255)
 	quad(100, 500, 200, 500, 200, 350, 100, 350);
@@ -44,7 +44,7 @@ function initDate() {
 	quad(100, 500, 200, 500, 200, 500 - (H * 6.25), 100, 500 - (H * 6.25));
 
 
-	// 链接器
+	// connector
 	fill(255, 255, 255)
 	strokeWeight(4)
 	stroke(85, 85, 79)
@@ -52,7 +52,7 @@ function initDate() {
 	text('hour', 135, 520)
 
 
-	// 分
+	// minute
 	noStroke()
 	fill(255, 255, 255)
 	quad(300, 400, 370, 400, 370, 250, 300, 250);
@@ -61,7 +61,7 @@ function initDate() {
 
 
 
-	// 链接器
+	// connector
 	strokeWeight(4)
 	stroke(85, 85, 79)
 	fill(255, 255, 255)
@@ -70,7 +70,7 @@ function initDate() {
 	text('second', 505, 315)
 
 
-	// 秒
+	// second
 	noStroke()
 	fill(255, 255, 255)
 	quad(500, 300, 550, 300, 550, 150, 500, 150);
@@ -81,13 +81,13 @@ function initDate() {
 
 
 
-	// 打印时间
+	// print the time
 	if (S > 11) {
 		statuss = true
 	}
 	if (10 >= S >= 1 && statuss) {
 		statuss = false
-		console.log('当前分钟', M)
+		console.log('current minute is', M)
 
 	}
 
